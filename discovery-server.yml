@@ -1,13 +1,9 @@
-﻿server:
+server:
   port: 8761
 
 eureka:
-  instance:
-    hostname: localhost
-  # standalone mode
   client:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://discovery-server:8761/eureka/
-
